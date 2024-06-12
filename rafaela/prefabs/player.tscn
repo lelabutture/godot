@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://x8exj6egpg33"]
+[gd_scene load_steps=7 format=3 uid="uid://x8exj6egpg33"]
 
 [ext_resource type="Texture2D" uid="uid://cygv6va07a827" path="res://assets/player_idle-01.png" id="1_5vaek"]
+[ext_resource type="Script" path="res://prefabs/player.gd" id="1_a3ljx"]
 [ext_resource type="Texture2D" uid="uid://pprymfll6xm8" path="res://assets/player_idle-02.png" id="2_droqo"]
 [ext_resource type="Texture2D" uid="uid://2hytw5mf332" path="res://assets/player_idle-03.png" id="3_auo0y"]
 
@@ -25,6 +26,7 @@ animations = [{
 }]
 
 [node name="player" type="Area2D"]
+script = ExtResource("1_a3ljx")
 
 [node name="collision" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_ewu05")
